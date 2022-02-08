@@ -13,12 +13,15 @@ function computerPlay () {
 
 } 
 
-let playerSelection = prompt().toLowerCase();
-let computerSelection = computerPlay();
+
 
 
 
 function game () {
+    
+    let playerSelection = prompt().toLowerCase();
+    let computerSelection = computerPlay();
+
     function gamePlay (playerSelection, computerSelection) {
     
         if (playerSelection === "rock" && computerSelection === "paper") {
@@ -50,4 +53,8 @@ function game () {
 }
 
 
+game();
+game();
+game();
+game();
 game();
