@@ -1,9 +1,10 @@
 
 function computerPlay () {
 
+    //Generate random number between 0 to 5
     let choices = Math.floor((Math.random())*6);
     
-    if (choices >= 0 && choices < 2) {
+    if (choices < 2) {
         return "rock";
     } else if (choices >= 2 && choices < 4 ) {
         return "paper";
@@ -14,20 +15,23 @@ function computerPlay () {
 } 
 
 
-
-
-
 function game () {
-    
+
     let playerSelection = prompt().toLowerCase();
     let computerSelection = computerPlay();
+
+    let userScore = 0;
+    let computerScore = 0;
+
 
     function gamePlay (playerSelection, computerSelection) {
     
         if (playerSelection === "rock" && computerSelection === "paper") {
+            computerScore++;
             return "You lose!, paper beats rock";
         }
         else if (playerSelection === "rock" && computerSelection === "scissors") {
+            userScore++;
             return "You win!, rock beats scissors ";
         }
         else if (playerSelection === "paper" && computerSelection === "rock") {
@@ -47,14 +51,24 @@ function game () {
         }
        
     }
+    
+    
+
+    console.log(userScore, computerScore);
+    
 
     console.log(gamePlay(playerSelection, computerSelection));
     
 }
 
 
-game();
-game();
-game();
-game();
-game();
+
+function sets () {
+
+    for (i = 0; i < 5; i++) {
+        game();
+    }
+
+}
+
+sets();
