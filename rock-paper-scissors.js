@@ -20,18 +20,13 @@ function game () {
     let playerSelection = prompt().toLowerCase();
     let computerSelection = computerPlay();
 
-    let userScore = 0;
-    let computerScore = 0;
-
-
     function gamePlay (playerSelection, computerSelection) {
     
         if (playerSelection === "rock" && computerSelection === "paper") {
-            computerScore++;
             return "You lose!, paper beats rock";
         }
         else if (playerSelection === "rock" && computerSelection === "scissors") {
-            userScore++;
+
             return "You win!, rock beats scissors ";
         }
         else if (playerSelection === "paper" && computerSelection === "rock") {
@@ -52,9 +47,6 @@ function game () {
        
     }
     
-    
-
-    console.log(userScore, computerScore);
     
 
     console.log(gamePlay(playerSelection, computerSelection));
