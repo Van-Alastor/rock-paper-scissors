@@ -1,5 +1,5 @@
 
-function computerPlay () {
+/*function computerPlay () {
 
     //Generate random number between 0 to 2
     let choices = Math.floor((Math.random())*3);
@@ -21,9 +21,6 @@ function game () {
 
     let playerSelection = prompt().toLowerCase();
     let computerSelection = computerPlay();
-
-    
-
 
     function gamePlay (playerSelection, computerSelection) {
     
@@ -56,23 +53,15 @@ function game () {
         }
        
     }
-    
-    
-
     console.log(gamePlay(playerSelection, computerSelection));
-
     console.log(`${userScore} vs ${computerScore}`);
-    
 }
 
 
 
 function sets () {
-
     for (i = 0; i < 5; i++) {
         game();
     }
-
 }
-
-sets();
+*/
