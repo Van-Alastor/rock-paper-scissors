@@ -24,7 +24,6 @@ userPoint.textContent = userScore++;
 
 computerPoint.textContent = computerScore++;
 
-
 btnUser.forEach((button) => {
 
    button.addEventListener('click', () => {
