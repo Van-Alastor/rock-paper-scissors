@@ -1,4 +1,4 @@
-let btnUser = document.querySelectorAll("button");
+let btnUser = document.querySelectorAll(".options button");
 
 let computerElection = document.querySelector("#computer");
 
@@ -61,6 +61,20 @@ btnUser.forEach((button) => {
     
   });
   
+})
+
+let reset = document.querySelector("#reset");
+
+reset.addEventListener("click", () => {
+
+   userScore = 0;
+
+   computerScore = 0;
+
+   userPoint.textContent = userScore++;
+
+   computerPoint.textContent = computerScore++;
+
 })
 
 
