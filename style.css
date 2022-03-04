@@ -1,0 +1,68 @@
+body {
+    background: lightblue;
+    margin: 0;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    background-color: rgba(150, 20, 20, 0.5);
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    gap: 100px;
+}
+
+#versus {
+    font-size: 70px;
+}
+
+#userPoint, #computerPoint, #user, #computer {
+    margin: 0;
+}
+
+
+#statement {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.elections {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+    gap: 150px;
+    border: 1px solid;
+}
+
+button {
+    padding: 10px 50px;
+    margin: 20px;
+    display: inline-block;
+    background: rgba(240, 22, 10, .5);
+    border-radius: 12%;
+    border-color: white;
+    border-style: solid;
+}
+
+button:active {
+    transform: translateY(4px);
+}
+
+#rock:hover, #paper:hover, #scissors:hover {
+    background: rgba(240, 22, 10, .8);
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+}
