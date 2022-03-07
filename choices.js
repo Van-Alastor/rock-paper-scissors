@@ -34,36 +34,36 @@ btnUser.forEach((button) => {
       if (user.textContent === "rock" && computer.textContent === "paper") {
          computerPoint.textContent = computerScore++;
          statement.textContent = "You lose! paper beats rock";
-         statement.style.color = "red";
+         statement.style.color = "#ff8f00";
       }
       else if (user.textContent === "rock" && computer.textContent === "scissors") {
          userPoint.textContent = userScore++;
          statement.textContent = "You win!, rock beats scissors ";
-         statement.style.color = "blue";
+         statement.style.color = "#56c8d8";
      }
      else if (user.textContent === "paper" && computer.textContent === "rock") {
          userPoint.textContent = userScore++;
          statement.textContent = "You win!, paper beats rock";
-         statement.style.color = "blue";
+         statement.style.color = "#56c8d8";
      }
      else if (user.textContent === "paper" && computer.textContent === "scissors") {
          computerPoint.textContent = computerScore++;
          statement.textContent = "You lose!, scissors beats paper";
-         statement.style.color = "red";
+         statement.style.color = "#ff8f00";
      }
      else if (user.textContent === "scissors" && computer.textContent === "rock") {
          computerPoint.textContent = computerScore++;
          statement.textContent = "You lose!, rock beats scissors";
-         statement.style.color = "red";
+         statement.style.color = "#ff8f00";
      }
      else if (user.textContent === "scissors" && computer.textContent === "paper") {
          userPoint.textContent = userScore++;
          statement.textContent = "You win!, scissors beats paper";
-         statement.style.color = "blue";
+         statement.style.color = "#56c8d8";
      }
      else {
          statement.textContent = "Draw, your choice is the same as the computer";
-         statement.style.color = "black";
+         statement.style.color = "#000000";
      }
     
   });
