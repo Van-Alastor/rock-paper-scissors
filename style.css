@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+}
+
+#principal {
+    background: #004d40;
+    min-height: 100vh;
+}
+
+
+#title {
+    display: flex;
+    justify-content: center;
+    color: #ffff;
+    font-size: 25px;
+    background-color: #00251a;
+}
+
+.score {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    align-items: center;
+    font-size: 95px;
+    
+}
+
+#versus {
+    font-size: 100px;
+}
+
+#userPoint, #computerPoint, #user, #computer {
+    margin: 0;
+}
+
+
+#statement {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.elections {
+    margin-top: 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+    gap: 150px;
+    border: 1px solid;
+}
+
+button {
+    width: 200px;
+    padding: 20px 20px;
+    margin: 20px;
+    display: inline-block;
+    background: #e3f6f5;
+    border-radius: 8%;
+    border-color: white;
+    border-style: solid;
+}
+
+button:active {
+    transform: translateY(5px);
+}
+
+#rock:hover, #paper:hover, #scissors:hover {
+    background: #007c91;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    color: #ffff;
+    display: flex;
+    background: #00251a;
+    padding: 15px;
+}

@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
+  
   <meta charset="utf-8">
-  <script src="rock-paper-scissors.js"></script>
-  <title>Rock paper and scissors</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="choices.js" defer></script>
+  <title>Rock-Paper-Scissors</title>
 </head>
 <body>
+  <div id="principal">
+    <div id="title">
+      Rock Paper Scissors
+    </div>
+    <div class="result">
+      <div class="message">
+        <p id="statement"></p>
+      </div>
+      <div class="elections">
+        Your election:<p id="user"></p>
+        Computer election:<p id="computer"></p>
+      </div>
+      <div class="score">
+        <p id="userPoint"></p>
+        <p id="versus">vs</p>
+        <p id="computerPoint"></p>
+      </div>
+    </div>
+    <div class="options">
+      <button title="rock" id="rock">Rock</button>
+      <button title="paper" id="paper">Paper</button>
+      <button title="scissors" id="scissors">Scissors</button>
+    </div>
+    <div>
+      <button title="reset" id="reset">Delete points</button>
+    </div>
+  </div>
+  <footer>
+    Jorge Orel Cruz
+  </footer>
 </body>
 </html>
